@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF_HambakSnow";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.jumbotron {
+  font-family: "Pretendard-Regular";
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+/* .jumbotron::before {
+  content: "";
+  position: absolute;
+  top: 97px;
+  left: 0;
+  width: 100vw;
+  height: 70vh;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.459
+  ); 
+} */
+
+.jumbotron__container {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron__contents {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.jumbotron__mainText {
+  font-size: 80px;
+  font-family: "SF_HambakSnow";
+  margin-bottom: 30px;
+}
+.jumbotron__subText {
+  font-family: "Pretendard-Regular";
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+@media screen and(max-width:768px
+) {
+  .jumbotron__container {
+    max-width: 400px;
+  }
+  .jumbotron__mainText {
+    font-size: 40px;
+  }
+  .jumbotron__subText {
+    font-size: 16px;
+  }
+}

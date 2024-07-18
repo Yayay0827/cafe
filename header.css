@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF_HambakSnow";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  font-family: "Pretendard-Regular";
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: white;
+  position: fixed;
+}
+nav {
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.initial {
+  font-family: "SF_HambakSnow";
+  font-size: 30px;
+  color: rgb(63, 95, 4);
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  font-family: "Pretendard-Regular";
+  list-style-type: none;
+  font-size: 15px;
+
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.1s;
+  color: rgb(135, 155, 45);
+  padding: 10px;
+}
+
+li:hover {
+  background-color: rgb(238, 238, 238);
+
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    max-width: 400px;
+    padding: 5px 0;
+  }
+
+  .links {
+    display: none;
+  }
+}
